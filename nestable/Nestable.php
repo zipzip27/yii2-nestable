@@ -141,8 +141,8 @@ class Nestable extends \kartik\base\Widget
             $dataId  = ArrayHelper::getValue($item, 'id', $dataid++);
             $options = ArrayHelper::merge($options, ['data-id' => $dataId]);
 
-            $contentOptions = ArrayHelper::getValue($item, 'contentOptions', ['class' => 'dd3-content']);
-			$content = $this->handleLabel;
+            $contentOptions = ArrayHelper::getValue($item, 'contentOptions', ['class' => 'dd-handle']);
+			//$content = $this->handleLabel;
 			$content .= Html::tag('div', ArrayHelper::getValue($item, 'content', ''), $contentOptions);
 
 			$children = ArrayHelper::getValue($item, 'children', []);
